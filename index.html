@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherAppKaja</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barrio&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+ <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" style="width: 40rem">
+        <div class="card-body">
+          <h5 id="date"></h5>
+          <h5 id="time"></h5>
+          <form id="city-search">
+            <div class="row">
+              <div class="mb-3 col-7">
+                <input
+                  id="city-search-engine"
+                  type="text"
+                  class="form-control"
+                  placeholder=" 🔍 What is the weather in...?"
+                />
+                <button type="submit" class="check">Check</button>
+                <button type="button" class="location">Current location</button>
+              </div>
+            </div>
+          </form>
+          <div class="row h-50">
+            <div class="col-5 current-search"><h1 id="city"></h1></div>
+            <div class="col-2 current-search"><h2><span id="current-temp"></span></h2></div>
+            <div class="col-2 current-search"><h2><a href="#" id="celcius">&#176C</a><span id="separator"> | </span><a href="#" id="farenheit">&#176F</a></h2></div>
+            <div class="col-3 current-search"><img src="images/sun.jpeg" width="80" class="current-weather-icon"></div>
+          </div>
+          <div class="row">
+            <div class="col"></div>
+            <div class="col-2"><p class="wind-humidity">Wind<br />Humidity</p></div>
+            <div class="col-3"><p class="wind-humidity-num">10km/h<br />40%</p></div>
+           </div> 
+            <hr />
+            <div class="row forecasts">
+              <div class="col forecast">Mon<br />☀️<br /><span class="forecast-temp">20/32</span></div>
+              <div class="col forecast">Tue<br />🌦<br /><span class="forecast-temp">20/25</span></div>
+              <div class="col forecast">Wed<br />🌧<br /><span class="forecast-temp">18/22</span></div>
+              <div class="col forecast">Thu<br />☀️<br /><span class="forecast-temp">20/30</span></div>
+              <div class="col forecast">Fri<br />⛈<br /><span class="forecast-temp">15/35</span></div>
+            </div>
+            <hr />
+          <p class="card-text farenheit-all">
+            Change to &#176F
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <script src="src/index.js"></script>
+    
+  </body>
+</html>

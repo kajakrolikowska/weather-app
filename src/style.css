@@ -1,0 +1,135 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  color: #1c7ecb;
+  text-align: right;
+  font-size: 28px;
+}
+h2 {
+  color: #e10000;
+  text-align: right;
+  font-size: 28px;
+}
+h5 {
+  color: #5a6275;
+  font-size: 16px;
+}
+
+a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #e10000;
+  position: relative;
+  top: -5px;
+}
+
+#separator {
+  font-size: 20px;
+  color: #e10000;
+  position: relative;
+  top: -5px;
+}
+#date {
+  margin-bottom: 0;
+}
+
+.check {
+  position: relative;
+  left: 365px;
+  top: -38px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid #ced4d9;
+  color: white;
+  font-size: 16px;
+  background: #ced4d9;
+
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.check:hover {
+  background: white;
+  color: #ced4d9;
+}
+
+.location {
+  position: relative;
+  left: 365px;
+  top: -38px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid #ced4d9;
+  color: white;
+  font-size: 16px;
+  background: #ced4d9;
+
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.location:hover {
+  background: white;
+  color: #ced4d9;
+}
+
+.current-weather-icon {
+  position: relative;
+  left: -25px;
+  top: -41px;
+}
+.wind-humidity {
+  color: #5a6275;
+  padding: 0;
+  font-size: 0.75rem;
+  text-align: right;
+}
+.wind-humidity-num {
+  color: #5a6275;
+  padding: 0 20px;
+  border-left: 1px solid #5a6275;
+  font-size: 0.75rem;
+}
+.current-search {
+  height: 60px;
+}
+
+hr {
+  border-color: #5a6275;
+}
+.forecast {
+  text-align: center;
+  padding: 0 10px;
+  color: #5a6275;
+  border-left: 1px solid #ced4d9;
+}
+.forecast:first-child {
+  border-left: none;
+}
+.forecast-temp {
+  font-size: 0.75rem;
+}
+.farenheit-all {
+  text-align: right;
+  font-weight: bold;
+  color: #1ab2a8;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.farenheit-all:hover {
+  color: #76aaa7;
+  transition: all 200ms ease-in-out;
+}
+.card {
+  display: block;
+  margin: 0 auto;
+}
+
+#current-temp {
+  position: relative;
+  left: 30px;
+}
